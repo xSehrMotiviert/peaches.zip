@@ -1,0 +1,4 @@
+Made by Nick Prellberg
+You are allowed to edit this sourcecode.
+You are not allowed to say, that this sourcecode is yours. Give credit!
+Upload your modifications to a forked public github repository.
