@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Peaches</title>
+    <title>Peaches.zip - The Ultimate Peaches Experience</title>
     <meta property="og:title" content="Peaches">
     <meta property="og:description" content="Watch Peaches Video">
     <meta property="og:image" content="https://peaches.zip/peaches.jpg">
@@ -13,6 +13,10 @@
     <meta name="twitter:title" content="Peaches">
     <meta name="twitter:description" content="Watch Peaches Video">
     <meta name="twitter:image" content="https://peaches.zip/peaches.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Peaches.zip! A meme site featuring the iconic Peaches song from the Super Mario movie. Explore the world of Peaches and enjoy the catchy tunes.">
+    <meta name="keywords" content="Peaches, Super Mario, Peaches song, meme, music, entertainment, Bowser, Jack Black">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         body {
