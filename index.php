@@ -35,21 +35,6 @@
             filter: blur(25px);
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
-
-        .playbutton {
-            size: 1000%;
-            position: absolute;
-            bottom: 50px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         .watermark {
             size: 1000%;
             position: absolute;
@@ -93,8 +78,8 @@
             font-size: 18px;
             border-radius: 10px;
             border: none;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #FFDAB9;
+            color: darkblue;
         }
     </style>
 </head>
