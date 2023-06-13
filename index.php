@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Peaches.zip - The Ultimate Peaches Experience</title>
-    <meta property="og:title" content="Peaches">
-    <meta property="og:description" content="Watch Peaches Video">
+    <meta property="og:title" content="The Ultimate Peaches Experience">
+    <meta property="og:description" content="Watch the Ultimate Peaches Video">
     <meta property="og:image" content="https://peaches.zip/peaches.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Peaches">
-    <meta name="twitter:description" content="Watch Peaches Video">
+    <meta name="twitter:title" content="The Ultimate Peaches Experience">
+    <meta name="twitter:description" content="Watch the Ultimate Peaches Video">
     <meta name="twitter:image" content="https://peaches.zip/peaches.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Peaches.zip! A meme site featuring the iconic Peaches song from the Super Mario movie. Explore the world of Peaches and enjoy the catchy tunes.">
+    <meta name="description" content="Experience the ultimate Peaches with Peaches.zip! Explore the world of Peaches and enjoy the catchy tunes from the iconic Peaches song in the Super Mario movie.">
     <meta name="keywords" content="Peaches, Super Mario, Peaches song, meme, music, entertainment, Bowser, Jack Black">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
         body {
             background-color: #333333;
@@ -65,6 +64,11 @@
             text-align: center;
         }
 
+        .code {
+            width: 100%;
+            height: 100%;
+        }
+
         figcaption {
             color: #fff
         }
@@ -91,53 +95,50 @@
 <body>
     <div id="video-container">
         <?php
-        $randomNumber = rand(1, 100);
-        if ($randomNumber === 1) {
-            $randomNumber2 = rand(1, 2);
-            if ($randomNumber2 === 1) {
+        if (rand(1, 100) === 1) {
+            if (rand(1, 2) === 1) {
                 echo '
-                <div class="code">
-                    <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="peachrolled.mp4" loop></video>
-                    <figcaption hidden><a href="https://www.youtube.com/watch?v=FvZdeEklJVA">peachrolled.</a> by: <a href="https://www.youtube.com/@CubicMind_">CubicMind</a></figcaption>
-                </div>
-            ';
+                    <div class="code">
+                        <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="peachrolled.mp4" loop></video>
+                        <figcaption hidden>
+                            <a href="https://www.youtube.com/watch?v=FvZdeEklJVA">peachrolled.</a> by: <a href="https://www.youtube.com/@CubicMind_">CubicMind</a>
+                        </figcaption>
+                    </div>
+                ';
             } else {
                 echo '
-                <div class="code">
-                    <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="nevergonnagivepeachup.mp4" loop></video>
-                    <figcaption hidden><a href="https://www.youtube.com/watch?v=JBSKOoru2E0">Never gonna give Peach up</a> by: <a href="https://www.youtube.com/@ryensmusic6424">Ryens Music</a></figcaption>
-                </div>
-            ';
+                    <div class="code">
+                        <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="nevergonnagivepeachup.mp4" loop></video>
+                        <figcaption hidden>
+                            <a href="https://www.youtube.com/watch?v=JBSKOoru2E0">Never gonna give Peach up</a> by: <a href="https://www.youtube.com/@ryensmusic6424">Ryens Music</a>
+                        </figcaption>
+                    </div>
+                ';
             }
         } else {
             echo '
-            <div class="code">
-                <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="peaches.mp4" loop ></video>
-                <figcaption hidden><a href="https://www.youtube.com/watch?v=imSefM4GPpE">Bowser - Peaches (Official Music Video) | The Super Mario Bros. Movie</a> by: <a href="https://www.youtube.com/@illumination">Illumination</a></figcaption>
-            </div>
-        ';
+                <div class="code">
+                    <video data-dashjs-player="" width="100%" height="100%" poster="black.png" src="peaches.mp4" loop></video>
+                    <figcaption hidden>
+                        <a href="https://www.youtube.com/watch?v=imSefM4GPpE">Bowser - Peaches (Official Music Video) | The Super Mario Bros. Movie</a> by: <a href="https://www.youtube.com/@illumination">Illumination</a>
+                    </figcaption>
+                </div>
+            ';
         }
         ?>
-    </div>
-    <!-- <div class="playbutton"> -->
-    <!-- <button>PEACH ME!</button> -->
-    <button id="myButton">Peach me!</button>
-    <!-- </div> -->
-    <div class="watermark">
-        <!-- This Website ist hosted on a xeonserv.de webspace. If you want to get one yourself, then you can click on the image. :) -->
-        <a href="https://xeonserv.de/affiliate/xsehrmotiviert" target="_blank"><img src="https://xeonserv.de/img/new_logos/v2/xeonserv_logo.png" alt="Powered by XeonServ.de"></a>
-    </div>
+    </div><button id="myButton">Peach me!</button>
+    <div class="watermark"><a href="https://xeonserv.de/affiliate/xsehrmotiviert" target="_blank"><img src="https://xeonserv.de/img/new_logos/v2/xeonserv_logo.png" alt="Powered by XeonServ.de"></a></div>
 </body>
 <footer>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             var button = document.getElementById('myButton');
             button.addEventListener('click', function() {
-                $('#video-container').css("filter", "blur(0px)");
+                document.getElementById('video-container').style.filter = "blur(0px)";
                 document.querySelector('video').play();
                 document.querySelector('video').muted = 0;
-                $('figcaption').show();
-                $('button').hide();
+                document.querySelector('figcaption').hidden = false;
+                document.querySelector('button').hidden = true;
             });
         });
     </script>
